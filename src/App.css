@@ -1,0 +1,12 @@
+body{
+  background-color: #07050F;
+  height: 100%;
+}
+
+@media (max-width: 628px){
+  body{
+    height: 100%;
+  }
+}
+
+

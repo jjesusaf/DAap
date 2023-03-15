@@ -1,0 +1,27 @@
+.copy {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    /* or 117% */
+    /* Gray 5 */
+    color: #E0E0E0;
+}
+
+.Buks {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray 5 */
+
+    color: #E0E0E0;
+    border-right: 1px solid #FFFFFF;
+}
