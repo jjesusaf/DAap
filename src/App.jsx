@@ -6,7 +6,8 @@ import star2 from '../src/assets/images/star2.svg';
 import SavingApp from './components/SavingApp';
 import { useState } from 'react';
 import Footer from './components/Footer';
-
+import LeadersTable from './pages/LeadersTable';
+import BuyCripto from './pages/BuyCripto';
 
 function App() {
   const [selectedCh, setSelectedCh] = useState(true);
@@ -30,9 +31,17 @@ function App() {
           setSelectedCh={setSelectedCh}
           setSelectedLeaders={setSelectedLeaders}
           setSelectedCripto={setSelectedCripto} />
-        {selectedCh ? <SavingApp/> : null }
+        {selectedCh && (
+          <SavingApp />
+        )}
+        {selectedLeaders && (
+          <LeadersTable />
+        )}
+        {selectedCripto && (
+          <BuyCripto />
+        )}
       </div>
-      <Footer/>
+      <Footer />
     </>
 
   )
